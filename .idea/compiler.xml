@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Annotation profile for Payment-Services" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.46/lombok-1.18.46.jar" />
+        </processorPath>
+        <module name="Notification-Services" />
+        <module name="Payment-Services" />
+        <module name="Transactions-Services" />
+        <module name="Account-Services" />
+        <module name="Fraud-Detection-Services" />
+        <module name="API-Gateway-Services" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="API-Gateway-Services" options="-parameters" />
+      <module name="Account-Services" options="-parameters" />
+      <module name="Fraud-Detection-Services" options="-parameters" />
+      <module name="Notification-Services" options="-parameters" />
+      <module name="Payment-Services" options="-parameters" />
+      <module name="Transactions-Services" options="-parameters" />
+    </option>
+  </component>
+</project>
